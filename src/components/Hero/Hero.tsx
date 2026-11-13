@@ -1,7 +1,5 @@
-import React from "react";
-
 function Hero() {
-  return <nav></nav>;
+  return <section></section>;
 }
 
 export default Hero;
