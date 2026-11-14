@@ -39,7 +39,7 @@ function Hero() {
 
       {/* Hero text */}
       <div className="flex w-full flex-col justify-center p-8 lg:w-[40%] lg:p-19">
-        <h3 className="py-4 font-spartan text-5xl font-bold">
+        <h3 className="py-4 font-spartan text-4xl font-bold lg:text-5xl">
           Discover Innovative ways to decorate
         </h3>
 
