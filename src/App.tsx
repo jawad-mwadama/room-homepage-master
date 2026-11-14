@@ -7,7 +7,7 @@ import RightImage from "./components/RightImage/RightImage";
 export default function App() {
   return (
     <main className="h-full">
-      <div className="relative">
+      <div className="relative inset-0">
         <Navbar />
         <Hero />
       </div>
