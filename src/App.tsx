@@ -7,12 +7,12 @@ import RightImage from "./components/RightImage/RightImage";
 export default function App() {
   return (
     <main className="h-full">
-      <div className="relative inset-0">
+      <div className="relative">
         <Navbar />
         <Hero />
       </div>
 
-      <div className="flex-col items-center sm:flex sm:flex-col md:flex-col lg:flex-row">
+      <div className="w-full flex-col gap-4 sm:flex sm:flex-col md:flex-col lg:flex-row">
         <LeftImage />
         <About />
         <RightImage />
