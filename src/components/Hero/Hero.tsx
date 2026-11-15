@@ -22,21 +22,6 @@ function Hero() {
         </picture>
 
         {/* Navigation buttons */}
-        {/* <div className="absolute right-0 bottom-0 flex gap-13 bg-black lg:right-[-20%]">
-          <button
-            aria-label="Previous slide"
-            className="bg-black px-5 py-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
-          >
-            <img src={previous} alt="" className="h-5 w-auto" />
-          </button>
-
-          <button
-            aria-label="Next slide"
-            className="bg-black px-5 py-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
-          >
-            <img src={next} alt="" className="h-5 w-auto" />
-          </button>
-        </div> */}
 
         <div className="absolute right-0 bottom-0 flex gap-1 bg-black lg:right-[-14.6%]">
           <button
