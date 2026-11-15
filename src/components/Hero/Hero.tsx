@@ -5,10 +5,12 @@ import next from "../../assets/images/icon-angle-right.svg";
 import iconArrow from "../../assets/images/icon-arrow.svg";
 
 function Hero() {
+  const buttonStyles =
+    "flex size-14 items-center justify-center bg-black transition-colors duration-150 hover:bg-stone-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:bg-stone-600 cursor-pointer lg:size-16";
   return (
     <section className="flex flex-col lg:flex-row">
       {/* Hero image and navigation */}
-      <div className="relative w-full lg:w-[58%]">
+      <div className="relative w-full lg:w-[63%]">
         <picture>
           <source media="(min-width: 1024px)" srcSet={desktopHeroImage1} />
 
@@ -20,17 +22,35 @@ function Hero() {
         </picture>
 
         {/* Navigation buttons */}
-        <div className="absolute right-0 bottom-0 flex lg:right-[-14%]">
+        {/* <div className="absolute right-0 bottom-0 flex gap-13 bg-black lg:right-[-20%]">
           <button
             aria-label="Previous slide"
-            className="bg-black p-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
+            className="bg-black px-5 py-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
           >
             <img src={previous} alt="" className="h-5 w-auto" />
           </button>
 
           <button
             aria-label="Next slide"
-            className="bg-black p-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
+            className="bg-black px-5 py-5 transition-colors duration-150 hover:bg-stone-500 lg:p-6"
+          >
+            <img src={next} alt="" className="h-5 w-auto" />
+          </button>
+        </div> */}
+
+        <div className="absolute right-0 bottom-0 flex gap-1 bg-black lg:right-[-14.6%]">
+          <button
+            type="button"
+            aria-label="Previous slide"
+            className={buttonStyles}
+          >
+            <img src={previous} alt="" className="h-5 w-auto" />
+          </button>
+
+          <button
+            type="button"
+            aria-label="Next slide"
+            className={buttonStyles}
           >
             <img src={next} alt="" className="h-5 w-auto" />
           </button>
