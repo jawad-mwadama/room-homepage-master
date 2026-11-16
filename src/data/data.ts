@@ -6,7 +6,16 @@ import mobileImage1 from "../assets/images/mobile-image-hero-1.jpg";
 import mobileImage2 from "../assets/images/mobile-image-hero-2.jpg";
 import mobileImage3 from "../assets/images/mobile-image-hero-3.jpg";
 
-export const heroData = [
+export interface HeroSlide {
+  id: number;
+  desktopImage: string;
+  mobileImage: string;
+  // alt: string;
+  title: string;
+  paragraph: string;
+}
+
+export const heroData: HeroSlide[] = [
   {
     id: 1,
     desktopImage: desktopImage1,
